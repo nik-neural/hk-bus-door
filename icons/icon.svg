@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="巴士到站">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141e30"/>
+      <stop offset="100%" stop-color="#060a12"/>
+    </linearGradient>
+    <linearGradient id="bus" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <rect x="64" y="64" width="384" height="384" rx="72" fill="#0f172a" opacity="0.55"/>
+  <circle cx="256" cy="148" r="44" fill="#4ade80" opacity="0.9"/>
+  <circle cx="256" cy="148" r="28" fill="#0a0f1a"/>
+  <text x="256" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#4ade80">ETA</text>
+  <rect x="108" y="220" width="296" height="148" rx="28" fill="url(#bus)"/>
+  <rect x="132" y="244" width="88" height="72" rx="12" fill="#0a0f1a" opacity="0.35"/>
+  <rect x="236" y="244" width="72" height="72" rx="12" fill="#0a0f1a" opacity="0.35"/>
+  <rect x="324" y="244" width="56" height="72" rx="12" fill="#0a0f1a" opacity="0.35"/>
+  <rect x="92" y="300" width="24" height="56" rx="12" fill="#f8fafc"/>
+  <rect x="396" y="300" width="24" height="56" rx="12" fill="#f8fafc"/>
+  <circle cx="164" cy="384" r="34" fill="#1e293b"/>
+  <circle cx="164" cy="384" r="18" fill="#94a3b8"/>
+  <circle cx="348" cy="384" r="34" fill="#1e293b"/>
+  <circle cx="348" cy="384" r="18" fill="#94a3b8"/>
+  <rect x="148" y="206" width="216" height="18" rx="9" fill="#fbbf24" opacity="0.55"/>
+</svg>

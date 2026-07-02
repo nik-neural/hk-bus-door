@@ -22,7 +22,7 @@
 | 一般 UI | [nik-neural.github.io/hk-bus/](https://nik-neural.github.io/hk-bus/) |
 | **站牌 Kiosk** | [nik-neural.github.io/hk-bus/?kiosk=1](https://nik-neural.github.io/hk-bus/?kiosk=1) |
 
-開過 Kiosk 後會記住設定；返回一般 UI：`?default=1`
+站牌模式要用上方 Kiosk 連結開；Raspberry Pi 請 bookmark `?kiosk=1` 嗰條 URL
 
 ## 加入主畫面（PWA）
 

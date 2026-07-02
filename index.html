@@ -11,14 +11,11 @@
   <script>
     (function () {
       const p = new URLSearchParams(location.search);
-      if (p.has('kiosk') || p.get('layout') === 'kiosk') {
-        try { localStorage.setItem('hkDoorBus_kiosk', '1'); } catch (_) {}
-      }
-      if (p.has('default') || p.get('layout') === 'default') {
+      const kiosk = p.has('kiosk') || p.get('layout') === 'kiosk';
+      // 只喺 URL 帶 kiosk 參數時先進入站牌模式；順便清走舊版殘留設定
+      if (!kiosk) {
         try { localStorage.removeItem('hkDoorBus_kiosk'); } catch (_) {}
       }
-      const kiosk = p.has('kiosk') || p.get('layout') === 'kiosk'
-        || (function () { try { return localStorage.getItem('hkDoorBus_kiosk') === '1'; } catch (_) { return false; } })();
       if (kiosk) {
         document.documentElement.classList.add('kiosk-root');
         const meta = document.getElementById('metaThemeColor');
